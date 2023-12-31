@@ -311,17 +311,30 @@ display: none !important;
     overflow-y: hidden;
     top: 65px;
     left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .fix>.nav-links{
     border: 7px solid var(--Secondary-color);
     border-radius: 5px;
     border-top: none;
   }
+.navbar .nav-links .dropdown {
+  margin: 30px 0;
+}
+.navbar .nav-links .dropdown a  , .navbar .nav-links .dropdown h6{
+  color: var(--bgColor);
+}
+.navbar .nav-links .dropdown1 a {
+  color: var(--body_bgColor);
+}
   .navbar > .nav-links > a {
     display: block;
     width: 100%;
-    color: var(--bgColor);
-  }
+    color: var(--bgColor) ;
+  } 
   .navbar > #nav-check:not(:checked) ~ .nav-links {
     height: 0;
     width: 100% !important;
@@ -449,8 +462,12 @@ display: none !important;
   flex-direction: column;
   color: var(--body_bgColor);
 }
-
-
+/* content */
+.content{
+  padding: 70px  5%;
+  padding-right: 18%;
+  transition: all ease-in .3s;
+}
 
 
 /* form */
@@ -523,22 +540,7 @@ display: none !important;
   color: var(--body_bgColor);
   margin-top: 40px  ;
 }
-.staff table .delete button {
-  background-color: rgb(120, 1, 1);
-  padding: 10px ;
-  border-radius: 5px;
-  color: var(--body_bgColor);
-  border: none;
-  color: var(--bgColor)
-}
-.staff table .Edit button {
-  background-color: var(--btnColor);
-  padding: 10px;
-  border-radius: 5px;
-  color: var(--body_bgColor);
-  border: none;
-  color: var(--bgColor)
-}
+
 
 .staff h2{
   padding: 10px 20px;
@@ -1050,4 +1052,25 @@ table{
 .allssssss {
   padding-right: 20% !important;
 }
+}
+.content button:not(:disabled) {
+   padding: 10px;
+   border-radius: 5px;
+   color: var(--body_bgColor);
+   border: none;
+   color: var(--bgColor);
+  background-color: var(--btnColor);
+ }
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+#clear{
+  opacity: .2;
+  cursor: not-allowed;
+}
+.clear_2{
+  opacity: 1 !important;
+  cursor: pointer !important;
 }

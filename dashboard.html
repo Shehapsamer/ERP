@@ -90,50 +90,115 @@
         </div>
 
 
-        <section class="nav_sidebar" id="nav_sidebar">
+<section class="nav_sidebar" id="nav_sidebar">
 
 
-            <div class="email">
-                <img src="./img/user.jpeg" alt="">
-                <h6>Mr Ahmed Samer</h6>
-            </div>
+    <div class="email">
+        <img src="./img/user.jpeg" alt="">
+        <h6>Mr Ahmed Samer</h6>
+    </div>
 
-            <ul class="nav_sidebar_links">
+    <ul class="nav_sidebar_links">
 
-                <li> <i class="fa-solid fa-gear"></i> <a href="./Staff_management.html"> اعدادات اللغه </a> </li>
-                <li> <i class="fa-solid fa-user-tie"></i> <a href="./Staff_management.html">اعدادات الموقع</a> </li>
-                <li> <i class="fa-solid fa-puzzle-piece"></i> <a href="./Staff_management.html">الاقسام</a> </li>
-                <li> <i class="fa-solid fa-person-through-window"></i> <a href="./Staff_management.html">الباب</a> </li>
-                <li> <i class="fa-brands fa-bandcamp"></i> <a href="./Staff_management.html">المركات</a> </li>
-                <li> <i class="fa-brands fa-buffer"></i> <a href="./Staff_management.html">العروض</a> </li>
-                <li> <i class="fa-brands fa-product-hunt"></i> <a href="./Staff_management.html">المنتجات</a> </li>
-                <li> <i class="fa-regular fa-newspaper"></i> <a href="./Staff_management.html">المقال</a> </li>
-                <li> <i class="fa-solid fa-images"></i> <a href="./Staff_management.html">الصور</a> </li>
-                <li> <i class="fa-solid fa-film"></i> <a href="./Staff_management.html">الفيدوهات</a> </li>
-                <li> <i class="fa-regular fa-comments"></i> <a href="./Staff_management.html">التعليقات</a> </li>
-                <li> <i class="fa-solid fa-phone"></i> <a href="./Staff_management.html">اتصل بنا</a> </li>
-
-
-            </ul>
-
-        </section>
+        <li> <i class="fa-solid fa-phone"></i> <a href="./Staff_management.html">اعدادات الاتصال</a> </li>
+        <li> <i class="fa-solid fa-gear"></i> <a href="./Staff_management.html"> اعدادات اللغه </a> </li>
+        <li> <i class="fa-solid fa-user-tie"></i> <a href="./Staff_management.html">اعدادات الموقع</a> </li>
+        <li> <i class="fa-solid fa-puzzle-piece"></i> <a href="./Staff_management.html">الاقسام</a> </li>
+        <li> <i class="fa-solid fa-person-through-window"></i> <a href="./Staff_management.html">الباب</a> </li>
+        <li> <i class="fa-brands fa-bandcamp"></i> <a href="./Staff_management.html">المركات</a> </li>
+        <li> <i class="fa-brands fa-buffer"></i> <a href="./Staff_management.html">العروض</a> </li>
+        <li> <i class="fa-brands fa-product-hunt"></i> <a href="./Staff_management.html">المنتجات</a> </li>
+        <li> <i class="fa-regular fa-newspaper"></i> <a href="./Staff_management.html">المقال</a> </li>
+        <li> <i class="fa-solid fa-images"></i> <a href="./Staff_management.html">الصور</a> </li>
+        <li> <i class="fa-solid fa-film"></i> <a href="./Staff_management.html">الفيدوهات</a> </li>
+        <li> <i class="fa-regular fa-comments"></i> <a href="./Staff_management.html">التعليقات</a> </li>
 
 
-        <div class="content" id="content">
+    </ul>
+
+</section>
+
+
+<div class="content" id="content">
+
+<div class="card mb-4">
+    <div class="card-header">
+
+<div class="sss">
+    <button> اضافه لغه</button>
+    <button id="clear" > حذف الكل </button>
+</div>
+
+        <div class="rrr">
+        قائمه اللغات
+        <i class="fas fa-table me-1"></i>
 
         </div>
 
 
+    </div>
+    
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th class="">اختر</th>
+                    <th>اللغه</th>
+                    <th>معاينه</th>
+                    <th>تعديل</th>
+                    <th>مسح</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>اختر</th>
+                    <th>اللغه</th>
+                    <th>معاينه</th>
+                    <th>تعديل</th>
+                    <th>مسح</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td >
+                        <div  class="form-check">
+                            <input onclick="clearAll()"  class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </td>
+                    <td>عربي</td>
+                    <th ><button style="background-color: green;"><i class="fa-solid fa-magnifying-glass"></i></button></th>
+                    <th><button style="background-color: rgb(192, 192, 10);"><i class="fa-solid fa-pen-nib"></i></button></th>
+                    <th><button style="background-color: red;"><i class="fa-solid fa-trash-can"></i></button></th>
+                </tr>
+
+
+            </tbody>
+            
+        </table>
+    </div>
+</div>
+
+
+</div>
 
 
 
+
+
+<script src="./js/1.JS"></script>
+
+
+<!--  Chart js الباقي -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
 
 
         <!-- سكريبت الرئيسي -->
 
-        <script src="./js/all.min.js"></script>
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/main.js"></script>
+<script src="./js/all.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script src="js/datatables-simple-demo.js"></script>
 
     </body>
 
