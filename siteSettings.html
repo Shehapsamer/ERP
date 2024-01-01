@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>اعدادت الموقع</title>
+        <link href="css/dataTable.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+
+
+<!-- navbar -->
+<div class="navbar allssssss" id="nasaaaaa">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <div class="nav-logo nav-logo-h1">
+
+            <div onclick="" class="toglle_menu_large" id="toglle_menu_large">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span class="span_1"></span>
+            <span class="span_2"></span>
+            <span class="span_3"></span>
+        </label>
+    </div>
+
+    <div class="nav-links">
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <li class="admin_img">
+                    <img src="./img/user.jpeg" alt="">
+                    <h6>ahmed samer</h6>
+                </li>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Edit_account.html">تعديل الحساب</a></li>
+                <li><a class="dropdown-item" href="./logIn.html">تسجيل خروج</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+                الاشعارات
+            </a>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">
+                <i class="fa-regular fa-envelope"></i>
+                الرسائل
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Sidebar menu -->
+<div class="toglle_menu" id="toglle_menu">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+
+<section class="nav_sidebar" id="nav_sidebar">
+
+
+    <div class="email">
+        <img src="./img/user.jpeg" alt="">
+        <h6>Mr Ahmed Samer</h6>
+    </div>
+
+    <ul class="nav_sidebar_links">
+
+        <li> <a href="./contact.html"> <i class="fa-solid fa-phone"></i> اعدادات الاتصال</a> </li>
+        <li> <a href="./language.html"> <i class="fa-solid fa-gear"></i>اعدادات اللغه </a> </li>
+        <li class="active"> <a href="./siteSettings.html"><i class="fa-solid fa-user-tie"></i> اعدادات الموقع</a> </li>
+        <li> <a href="./category.html"> <i class="fa-solid fa-puzzle-piece"></i> الاقسام</a> </li>
+        <li> <a href="./supCatt.html"> <i class="fa-solid fa-person-through-window"></i> الباب</a> </li>
+        <li> <a href="./Brands.html"> <i class="fa-brands fa-bandcamp"></i> المركات</a> </li>
+        <li> <a href="./Offers.html"> <i class="fa-brands fa-buffer"></i> العروض</a> </li>
+        <li> <a href="./products.html"> <i class="fa-brands fa-product-hunt"></i> المنتجات</a> </li>
+        <li> <a href="./blog.html"> <i class="fa-regular fa-newspaper"></i> المقال</a> </li>
+        <li> <a href="./imges.html"> <i class="fa-solid fa-images"></i> الصور</a> </li>
+        <li> <a href="./video.html"> <i class="fa-solid fa-film"></i> الفيدوهات</a> </li>
+        <li> <a href="./Comments.html"> <i class="fa-regular fa-comments"></i> التعليقات</a> </li>
+
+
+    </ul>
+
+</section>
+
+
+
+
+        <div class="content" id="content">
+
+            <div class="card mb-4">
+                <div class="card-header">
+
+                    <div class="sss">
+                        <button> اضافه  </button>
+                        <button id="clear"> حذف الكل </button>
+                    </div>
+
+                    <div class="rrr">
+                        قائمه اعدادات الموقع
+                        <i class="fas fa-table me-1"></i>
+
+                    </div>
+
+
+                </div>
+
+                <div class="card-body">
+                    <table id="datatablesSimple">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th class="">اختر</th>
+                                <th>اللغه</th>
+                                <th>معاينه</th>
+                                <th>تعديل</th>
+                                <th>مسح</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>id</th>
+                                <th>اختر</th>
+                                <th>اللغه</th>
+                                <th>معاينه</th>
+                                <th>تعديل</th>
+                                <th>مسح</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input onclick="clearAll()" class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>عربي</td>
+                                <th><button style="background-color: green;"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></th>
+                                <th><button style="background-color: rgb(192, 192, 10);"><i
+                                            class="fa-solid fa-pen-nib"></i></button></th>
+                                <th><button style="background-color: red;"><i
+                                            class="fa-solid fa-trash-can"></i></button></th>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input onclick="clearAll()" class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>عربي</td>
+                                <th><button style="background-color: green;"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></th>
+                                <th><button style="background-color: rgb(192, 192, 10);"><i
+                                            class="fa-solid fa-pen-nib"></i></button></th>
+                                <th><button style="background-color: red;"><i
+                                            class="fa-solid fa-trash-can"></i></button></th>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input onclick="clearAll()" class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>عربي</td>
+                                <th><button style="background-color: green;"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></th>
+                                <th><button style="background-color: rgb(192, 192, 10);"><i
+                                            class="fa-solid fa-pen-nib"></i></button></th>
+                                <th><button style="background-color: red;"><i
+                                            class="fa-solid fa-trash-can"></i></button></th>
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <script src="./js/1.JS"></script>
+
+
+        <!--  Chart js الباقي -->
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+
+
+        <!-- سكريبت الرئيسي -->
+
+        <script src="./js/all.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script src="js/datatables-simple-demo.js"></script>
+
+    </body>
+
+</html>

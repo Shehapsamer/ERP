@@ -327,8 +327,8 @@ display: none !important;
 .navbar .nav-links .dropdown a  , .navbar .nav-links .dropdown h6{
   color: var(--bgColor);
 }
-.navbar .nav-links .dropdown1 a {
-  color: var(--body_bgColor);
+.navbar .nav-links .dropdown li a {
+  color: var(--body_bgColor) !important;
 }
   .navbar > .nav-links > a {
     display: block;
@@ -403,17 +403,17 @@ display: none !important;
   color: var(--main_bgColor);
   transition: all ease-in .3s;
   background-color: transparent ;
-  display: flex;align-items: center;
 }
 .nav_sidebar_links a{
   color: var(--bgColor);
   padding-left: 20px;
-  padding: 10px 0;
+  padding: 5px 0;
   padding-left: 20px;
-  display: block;
+  display: flex !important;
+  align-items: center;
 }
 .nav_sidebar_links svg{
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 .nav_sidebar_links  li:hover{
   background-color: var(--bgColor);
@@ -438,6 +438,9 @@ display: none !important;
   box-shadow: 1px 1px 5px 1px #ffffff55;
   transform: translateY(-10px);
   color: var(--textColor);
+}
+.nav_sidebar_links .active a{
+  color: var(--body_bgColor);
 }
 .S1_home{
   padding: 70px 0;
@@ -745,13 +748,23 @@ display: none !important;
 .cleandars{
   flex-direction: column;
 }
+.content{
+  padding: 5% !important;
+}
+.sss button{
+  margin: 10px 0;
+
+}
+.rrr ,.sss{
+  text-align: center;
+}
  }
 
 
  @media screen and (min-width:768px) and (max-width:1023px){
-.navbar .nav-header .nav-logo {
-    margin-right: 60px !important;
-  }
+  .content {
+      padding: 5% !important;
+    }
  }
 
 
@@ -1040,9 +1053,9 @@ table{
   }
 
 
-    .allssssss {
-      padding-right: 5% !important;
-    }
+  .allssssss {
+    padding-right: 5% !important;
+  }
 .toglle_menu_large {
   display: none !important;
 }
